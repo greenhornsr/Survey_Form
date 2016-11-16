@@ -1,0 +1,10 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+  #wrapper{
+    background-color: silver;
+    width: 970px;
+    margin: 0px auto;
+  }
+  

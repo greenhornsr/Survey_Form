@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  {% load staticfiles %}
+  <link rel="stylesheet" href="{% static "surveyform/css/styles.css" %}">
+</head>
+<body>
+  <div id="wrapper">
+    <div id="countmsg">
+      <p>Thanks for submitting this form!  You have submitted this form {{request.session.counter}} times now.</p>
+    </div>
+    <div id="subinfo">
+      <h1>Submitted Information</h1>
+        <p>Name: {{request.session.name}}</p>
+        <p>Dojo Location: {{request.session.dojoloc}}</p>
+        <p>Favorite Language: {{request.session.favlang}}</p>
+        <p>Comment: {{request.session.comments}}</p>
+      <a href="/"><button type="button" name="button">Go Back</button></a>
+    </div>
+  </div>
+</body>
+</html>
